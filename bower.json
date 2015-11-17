@@ -1,0 +1,25 @@
+{
+  "name": "skjalftaleit",
+  "description": "Lokaverkefni Vefforritun",
+  "main": "",
+  "authors": [
+    "Stefán Carl Peiser <scg2@hi.is>",
+    "Oddgeir Páll Georgsson <opg5@hi.is>",
+    "Egill Ian Guðmundsson <eig20@hi.is>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/lokaverkefni-vefforritun-SEO/skjalftaleit",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5"
+  }
+}
