@@ -1,17 +1,24 @@
 extends layout
 
+// Home page
 block content
   .container
     .col-md-8
-      h1 AGF
-      ul(class='nav nav-pills')
-        li(class='presentation')
-          a(href='/') Home
-        li(class='presentation')
-          a(href='#') About
-        li(class='presentation')
-          a(href='#') Map
-        li(class='presentation')
-          a(href='#') Submit
+      .row
+        include ./bannerAndNav.jade
+          
+        h4 Welcome to the home page of the Amateur Geologist Federation.
+        p. 
+          To get to know us better, visit our "About" page for further 
+          information regarding our organization and it's functions.
+        p.
+          We are currently hosting a map that shows the location 
+          and magnitude for the most recent earthquakes in Iceland. If you 
+          wish to view this map, visit our "Map" page.
+        p. 
+          If you are an amateur geologist and wish to add your own seismic
+          observations to the map, head on over to the "Submit" page and
+          post your info there.
 
-  script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js", integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==", crossorigin="anonymous")
+  // Adds footer containing CDN connections to necessary scripts
+  include ./footer.jade
