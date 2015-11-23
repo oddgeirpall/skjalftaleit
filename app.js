@@ -26,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/img', express.static(__dirname + '/img'))
 // Command for allowing server access to /frontscripts folder
 app.use('/frontscripts', express.static(__dirname + '/frontscripts'));
+app.use('/public', express.static(__dirname + '/public'));
 
 app.use('/', routes);
 app.use('/users', users);
